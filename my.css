@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+    font-family: Verdana;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    float: left;
+    width: 100%;
+    background-color: #313131;
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+nav > ul > li  a {
+    display: block;
+    text-decoration: none;
+    padding: 0px 25px;
+    line-height: 50px;
+    color: white;
+    white-space:nowrap;
+    transition: background-color 0.2s;
+}
+nav > ul > li a:hover {
+    background-color: #6E6E6E;
+}
+li.vsep {
+    margin: 0 10px;
+    width: 2px;
+    background-color: white;
+    height: 50px;
+}
+nav > ul > li > .dd {    
+    display: none;
+    background-color: #313131;
+    position: absolute;
+    z-index: 1;
+}
+.dd > li {
+    white-space: nowrap;
+}
+.dd > li > label {
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 0px 10px 0px 25px;
+    margin-right: 60px;
+    line-height: 50px;
+    color: #9E9E9E;
+}
+.dd > li > input {
+    line-height: 50px;
+    margin-left: -60px;
+    color: white;
+    border: none;
+    background-color: #313131;
+    font-size: 16px;
+    width: 60px;
+    transition: background-color 0.3s;
+}
+.dd > li > input:hover {
+    background-color: #444444;
+}
+.dd > li > input[type="color"] {
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    margin-left: -50px;
+    cursor: pointer;
+}
+.dd > li > input:focus {
+    outline: none;
+}
+
+li.hsep {
+    margin: 5px 0;
+    height: 2px;
+    background-color: white;
+    width: 100%;
+}
+
+#preset li a {
+    padding-right: 75px;
+}
+.dd canvas {
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    margin-top: -45px;
+    pointer-events:none;
+}
+#mycanvas {
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+}
