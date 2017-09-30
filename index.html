@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>game of life</title>
+
+        <link href="css/my.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#" id="play_button">Play</a></li>
+                <li><a href="#" id="step_button">Step</a></li>
+                <li class="vsep"></li>
+                <li><a href="#">File</a>
+                    <ul class="dd">
+                        <li><a href="#" id="new_button">New</a></li>
+                        <li><a href="#" id="newr_button">New with random pattern</a></li>
+                        <li class="hsep"></li>
+                        <li><a href="#" id="load_button">Load Pattern</a></li>
+                        <li><a href="#" id="save_button">Share Pattern</a></li>
+                        <li class="hsep"></li>
+                        <li><a href="#" id="img_button" download="gol.png">Save as Image</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Settings</a>
+                    <ul class="dd">
+                        <li>
+                            <label for="delay_input">Delay in ms:</label>
+                            <input type="number" min="0" step="10" value="200" id="delay_input" novalidate>                                
+                        </li>
+                        <li class="hsep"></li>
+                        <li>
+                            <label for="row_input">Rows:</label>
+                            <input type="number" min="10" step="10" value="10" id="row_input" novalidate>                                
+                        <li>
+                            <label for="col_input">Colums:</label>
+                            <input type="number" min="10" step="10" value="10" id="col_input" novalidate>                                
+                        </li>
+                        <li class="hsep"></li>
+                        <li>
+                            <label for="bg_input">Background:</label>
+                            <input type="color" id="bg_input" value="#c8c8c8">                                
+                        </li>
+                        <li>
+                            <label for="cell_input">Cell:</label>
+                            <input type="color" id="cell_input" value="#000000">                                
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Preset</a>
+                    <ul class="dd" id="preset"></ul>
+                </li>                
+            </ul>
+            </nav>
+
+        <div id="cwrapper">
+            <canvas id="mycanvas"></canvas>
+        </div>
+        
+        <script type="text/javascript" src="js/preset.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="js/interface.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="js/game.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="js/canvas.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
+    </body>
+</html>
